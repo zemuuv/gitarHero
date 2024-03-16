@@ -4,69 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperHero Band</title>
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="imagenes/icono.png" type="image/png">
-    <style>
-        /* Estilo para el rectángulo */
-        .rectangulo {
-            width: 300px; /* Ancho del rectángulo */
-            height: 700px; /* Altura del rectángulo */
-            background-image: url('imagenes/Gitartaste.jpg'); /* Color de fondo */
-            background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-            background-position: center; /* Centra la imagen */
-        }
-        
-        .fondo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('imagenes/fondo.jpeg'); /* Ruta de la imagen de fondo */
-        background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-        z-index: -1; /* Asegura que el fondo esté detrás de todo el contenido */
-        }
-
-        /* Estilo para el contenido */
-        .content {
-        position: relative;
-        z-index: 1; /* Asegura que el contenido esté delante del fondo */
-        color: white; /* Color del texto */
-        padding: 20px;
-         }
-         .boton {
-        padding: 10px 20px; /* Espacio interior del botón */
-        background-color: #226fa2; /* Color de fondo */
-        color: black; /* Color del texto */
-        border: none; /* Quita el borde */
-        border-radius: 5px; /* Borde redondeado */
-        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-        font-size: 16px; /* Tamaño de la fuente */
-        position: absolute; /* Posicionamiento absoluto */
-        top: 300px;
-        left: 675px;
-        }
-
-        /* Estilo para el botón cuando se pasa el cursor sobre él */
-        .boton:hover {
-            background-color: #1093ea; /* Cambia el color de fondo al pasar el cursor */
-        }
-    </style>
-    <script>
-        // Función para cambiar el contenido del div
-        function cambiarContenido() {
-            var contenido = document.getElementById("gitar").innerHTML      
-            document.getElementById("menu").innerHTML = contenido;
-        }
-        
-        // Función para restaurar el contenido original del div
-        function restaurarContenidoOriginal() {
-            var contenidoOriginal = document.getElementById("gitar").innerHTML 
-            document.getElementById("miDiv").innerHTML = contenidoOriginal;
-        }
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">    
+    <script src="javascrip/scripts.js"></script>
 </head>
 <body>
-    <div id="menu" class="fondo">
+    <div id="menu" class="Fondo">
         <center><div class="content">
             <button onclick="cambiarContenido()" class="boton">Empezar juego</button>
         </div></center>
@@ -74,7 +20,7 @@
     <div id="gitar" style="display: none;" class="fondo">
         
         <center><div class="rectangulo content">
-        
+        <h1>holaaa</h1>
         </div></center>
     </div>
     
