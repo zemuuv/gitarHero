@@ -3,7 +3,7 @@
         .rectangulo {
             width: 20vw; /* Ancho del rectángulo */
             height: 100vh; /* Altura del rectángulo */
-            background-image: url('imagenes/Gitartaste.jpg'); /* Color de fondo */
+            background-image: url('imagenes/Gitartaste.jpg  '); /* Color de fondo */
             background-size: cover; /* Ajusta la imagen para cubrir todo el área */
             background-position: center; /* Centra la imagen */
         }
@@ -23,26 +23,61 @@
         .content {
         position: relative;
         z-index: 1; /* Asegura que el contenido esté delante del fondo */
-        color: white; /* Color del texto */
+        color: black; /* Color del texto */
         padding: 20px;
         }
 
         .boton {
-        padding: 10px 20px; /* Espacio interior del botón */
+        padding: 20px 40px; /* Espacio interior del botón */
         background-color: white; /* Color de fondo */
         font-family:  'Lakki Reddy', sans-serif; /* Cambia el tipo de letra */
         color: black; /* Color del texto */
         border: 2px solid black;
         border-radius: 5px; /* Borde redondeado */
         cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-        font-size: 16px; /* Tamaño de la fuente */
+        font-size: 30px; /* Tamaño de la fuente */
         position: absolute; /* Posicionamiento absoluto */
-        top: 30vh;
-        left: 46vw;
+        top: 50vh;
+        left: 41vw;
         }
 
         /* Estilo para el botón cuando se pasa el cursor sobre él */
         .boton:hover {
             background-color: rgb(223, 100, 0); /* Cambia el color de fondo al pasar el cursor */
+        }
+
+        h1{
+            font-family: 'Lakki Reddy', sans-serif;
+            color: black;
+            font-weight: bold;
+            font-size: 80px; /* Tamaño de letra más grande */
+            text-shadow: 
+            3px 3px 0 #FFF, 
+            -3px -3px 0 #FFF, 
+            3px -3px 0 #FFF, 
+            -3px 3px 0 #FFF; /* Borde blanco */
+        }
+
+
+        .boton-pausa{            
+            position: fixed;
+            top: 2vh; /* 2% del alto de la ventana */
+            right: 2vw; /* 2% del ancho de la ventana */
+            background: none; /* Elimina el fondo */
+            border: none; /* Elimina el borde */
+            padding: 0; /* Elimina el relleno */
+        }
+
+        #menu-pausa {
+            position: fixed; /* Posicionamiento fijo */
+            top: 50%; /* Centrado verticalmente */
+            left: 50%; /* Centrado horizontalmente */
+            transform: translate(-50%, -50%); /* Centrado exacto */
+            background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 10px; /* Borde redondeado */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+            z-index: 9999; /* Asegura que esté sobre otros elementos */
+            display: none; /* Inicialmente oculto */
         }
     
