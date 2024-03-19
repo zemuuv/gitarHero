@@ -12,19 +12,23 @@
     <script src="javascript/scripts.js"></script>
 </head>
 <body>
+    
     <div id="menu" class="Fondo">
         <center><div class="content">
             <h1> SuperHero <br> Band </h1>
             <button onclick="cambiarContenido()" class="boton">Empezar juego</button>
         </div></center>
     </div>
+
+    <button onclick="mostrarMenu()" class="boton-pausa">
+        <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
+    </button>
+    
     <div id="gitar" style="display: none;" class="fondo">
 
-        <button onclick="mostrarMenu()" class="boton-pausa">
-            <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
-        </button>
+        
 
-        <div id="menu-pausa">
+        <div id="menu-pausa" style="display: none;">
             <h1>pausa</h1>
             <button onclick="restaurarContenidoOriginal()" class="boton"> volver al inicio</button>
             <button onclick="ocultarMenu()" class="boton">Continuar</button>
@@ -32,6 +36,8 @@
 
         <center><div class="rectangulo content"></div></center>
     </div>
+
+    
     
 </body>
 </html>

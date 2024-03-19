@@ -9,3 +9,11 @@ function restaurarContenidoOriginal() {
     var contenidoOriginal = document.getElementById("gitar").innerHTML 
     document.getElementById("miDiv").innerHTML = contenidoOriginal;
 }
+
+function mostrarMenu() {
+    document.getElementById("menu-pausa").style.display = "block";
+}
+
+function ocultarMenu() {
+    document.getElementById("menu-pausa").style.display = "none";
+}
