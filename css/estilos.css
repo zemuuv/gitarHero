@@ -94,6 +94,7 @@
 
         .boton-continuar{
             padding: 10px 20px; /* Espacio interior del botón */
+            position: fixed;
             background-color: white; /* Color de fondo */
             font-family:  'Lakki Reddy', sans-serif; /* Cambia el tipo de letra */
             color: black; /* Color del texto */
@@ -115,6 +116,7 @@
 
         .boton-volver{
             padding: 20px 40px; /* Espacio interior del botón */
+            position: fixed;
             background-color: white; /* Color de fondo */
             font-family:  'Lakki Reddy', sans-serif; /* Cambia el tipo de letra */
             color: black; /* Color del texto */
