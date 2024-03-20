@@ -5,9 +5,9 @@ function cambiarContenido() {
 }
 
 // Función para restaurar el contenido original del div
-function restaurarContenidoOriginal() {
-    var contenidoOriginal = document.getElementById("menu-pausa").innerHTML 
-    document.getElementById("miDiv").innerHTML = contenidoOriginal;
+function volverAlMenu() {
+    document.getElementById("menu").style.display = "block";
+    document.getElementById("gitar").style.display = "none";
 }
 
 function mostrarMenu() {

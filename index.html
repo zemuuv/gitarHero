@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +9,45 @@
     <link rel="icon" href="css/imagenes/icono.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">
     <script src="javascript/scripts.js"></script>
 </head>
+
 <body>
-    
+
     <div id="menu" class="Fondo">
-        <center><div class="content">
-            <h1> SuperHero <br> Band </h1>
-            <button onclick="cambiarContenido()" class="boton">Empezar juego</button>
-        </div></center>
+        <center>
+            <div class="content">
+                <h1> SuperHero <br> Band </h1>
+                <button onclick="cambiarContenido()" class="boton">Empezar juego</button>
+            </div>
+        </center>
     </div>
 
-    
-    
+
+
     <div id="gitar" style="display: none;" class="fondo">
         <button onclick="mostrarMenu()" class="boton-pausa">
             <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
         </button>
-        
 
         <div id="menu-pausa" style="display: none;">
             <h1>pausa</h1>
             <div>
-                <button onclick="ocultarMenu()" class="boton-continuar">Continuar</button>
-            </div>            
+                <button onclick="ocultarMenu()" class="boton-continuar ">Continuar</button>
+                <button onclick="volverAlMenu()" class="boton-volver">Volver al menú</button>
+            </div>
         </div>
 
-        <center><div class="rectangulo content"></div></center>
+        <center>
+            <div class="rectangulo content">
+                
+            </div>
+        </center>
     </div>
 
-    
-    
+
+
 </body>
+
 </html>

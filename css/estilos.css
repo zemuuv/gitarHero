@@ -50,6 +50,10 @@
             background-color: rgb(223, 100, 0); /* Cambia el color de fondo al pasar el cursor */
         }
 
+        .boton-volver:hover {
+            background-color: rgb(223, 100, 0); /* Cambia el color de fondo al pasar el cursor */
+        }
+
         h1{
             font-family: 'Lakki Reddy', sans-serif;
             color: black;
@@ -77,14 +81,39 @@
             left: 50%; /* Centrado horizontalmente */
             transform: translate(-50%, -50%); /* Centrado exacto */
             background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
-            padding: 70px; /* Espaciado interno */
+            padding: 100px; /* Espaciado interno */
             border-radius: 10px; /* Borde redondeado */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
             z-index: 9999; /* Asegura que esté sobre otros elementos */
             display: none; /* Inicialmente oculto */
         }
 
+        #menu-pausa h1 {
+            margin-top: -60px; /* Mueve el texto hacia arriba */
+        }
+
         .boton-continuar{
+            padding: 10px 20px; /* Espacio interior del botón */
+            background-color: white; /* Color de fondo */
+            font-family:  'Lakki Reddy', sans-serif; /* Cambia el tipo de letra */
+            color: black; /* Color del texto */
+            border: 2px solid black;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            font-size: 30px; /* Tamaño de la fuente */
+            position: absolute; /* Posicionamiento absoluto */
+            top: 15vh;
+            left: 6vw;
+        }
+
+        .circulo {
+            width: 100px; /* Ancho del círculo */
+            height: 100px; /* Altura del círculo */
+            border-radius: 50%; /* Hace que el div tenga forma de círculo */
+            background-color: #f00; /* Color de fondo (puedes cambiarlo según tus necesidades) */
+        }
+
+        .boton-volver{
             padding: 20px 40px; /* Espacio interior del botón */
             background-color: white; /* Color de fondo */
             font-family:  'Lakki Reddy', sans-serif; /* Cambia el tipo de letra */
@@ -94,7 +123,7 @@
             cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
             font-size: 30px; /* Tamaño de la fuente */
             position: absolute; /* Posicionamiento absoluto */
-            top: 25vh;
-            left: 4vw;
-            }
+            top: 23vh;
+            left: 3.5vw;
+        }
     
