@@ -20,18 +20,19 @@
         </div></center>
     </div>
 
-    <button onclick="mostrarMenu()" class="boton-pausa">
-        <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
-    </button>
+    
     
     <div id="gitar" style="display: none;" class="fondo">
-
+        <button onclick="mostrarMenu()" class="boton-pausa">
+            <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
+        </button>
         
 
         <div id="menu-pausa" style="display: none;">
             <h1>pausa</h1>
-            <button onclick="restaurarContenidoOriginal()" class="boton"> volver al inicio</button>
-            <button onclick="ocultarMenu()" class="boton">Continuar</button>
+            <div>
+                <button onclick="ocultarMenu()" class="boton-continuar">Continuar</button>
+            </div>            
         </div>
 
         <center><div class="rectangulo content"></div></center>

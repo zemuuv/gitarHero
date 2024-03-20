@@ -6,7 +6,7 @@ function cambiarContenido() {
 
 // Función para restaurar el contenido original del div
 function restaurarContenidoOriginal() {
-    var contenidoOriginal = document.getElementById("gitar").innerHTML 
+    var contenidoOriginal = document.getElementById("menu-pausa").innerHTML 
     document.getElementById("miDiv").innerHTML = contenidoOriginal;
 }
 
