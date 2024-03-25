@@ -107,11 +107,32 @@
             left: 6vw;
         }
 
-        .circulo {
+        .circulo1 {
             width: 100px; /* Ancho del círculo */
             height: 100px; /* Altura del círculo */
             border-radius: 50%; /* Hace que el div tenga forma de círculo */
-            background-color: #f00; /* Color de fondo (puedes cambiarlo según tus necesidades) */
+            background-color: rgb(247, 8, 8); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+        }
+
+        .circulo2 {
+            width: 100px; /* Ancho del círculo */
+            height: 100px; /* Altura del círculo */
+            border-radius: 50%; /* Hace que el div tenga forma de círculo */
+            background-color: rgb(26, 26, 228); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+        }
+
+        .circulo3 {
+            width: 100px; /* Ancho del círculo */
+            height: 100px; /* Altura del círculo */
+            border-radius: 50%; /* Hace que el div tenga forma de círculo */
+            background-color: rgb(238, 238, 16); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+        }
+
+        .circulo4 {
+            width: 100px; /* Ancho del círculo */
+            height: 100px; /* Altura del círculo */
+            border-radius: 50%; /* Hace que el div tenga forma de círculo */
+            background-color: rgb(5, 194, 5); /* Color de fondo (puedes cambiarlo según tus necesidades) */
         }
 
         .boton-volver{
