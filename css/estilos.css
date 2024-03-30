@@ -3,10 +3,15 @@
         .rectangulo {
             width: 20vw; /* Ancho del rectángulo */
             height: 100vh; /* Altura del rectángulo */
-            background-image: url('imagenes/Gitartaste.jpg  '); /* Color de fondo */
+            background-image: url('imagenes/Gitartaste.jpg'); /* Imagen de fondo */
             background-size: cover; /* Ajusta la imagen para cubrir todo el área */
             background-position: center; /* Centra la imagen */
+            display: flex; /* Usa flexbox para los círculos */
+            justify-content: center; /* Centra los círculos horizontalmente */
+            align-items: center; /* Centra los círculos verticalmente */
         }
+
+        
         
         .Fondo {
         position: fixed;
@@ -38,7 +43,7 @@
         font-size: 30px; /* Tamaño de la fuente */
         position: absolute; /* Posicionamiento absoluto */
         top: 50vh;
-        left: 41vw;
+        left: 40vw;
         }
 
         /* Estilo para el botón cuando se pasa el cursor sobre él */
@@ -49,10 +54,7 @@
         .boton-continuar:hover {
             background-color: rgb(223, 100, 0); /* Cambia el color de fondo al pasar el cursor */
         }
-
-        .boton-volver:hover {
-            background-color: rgb(223, 100, 0); /* Cambia el color de fondo al pasar el cursor */
-        }
+        
 
         h1{
             font-family: 'Lakki Reddy', sans-serif;
@@ -64,7 +66,20 @@
             -3px -3px 0 #FFF, 
             3px -3px 0 #FFF, 
             -3px 3px 0 #FFF; /* Borde blanco */
-        }        
+        }  
+        
+        h3{
+            font-family: 'Lakki Reddy', sans-serif;
+            color: black;
+            top: 10vh;
+            font-weight: bold;
+            font-size: 50px; /* Tamaño de letra más grande */
+            text-shadow: 
+            3px 3px 0 #FFF, 
+            -3px -3px 0 #FFF, 
+            3px -3px 0 #FFF, 
+            -3px 3px 0 #FFF; /* Borde blanco */
+        }
 
         .boton-pausa{            
             position: fixed;
@@ -103,50 +118,129 @@
             cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
             font-size: 30px; /* Tamaño de la fuente */
             position: absolute; /* Posicionamiento absoluto */
-            top: 15vh;
-            left: 6vw;
+            top: 30vh;
+            left: 8vw;
+            
         }
 
         .circulo1 {
-            width: 100px; /* Ancho del círculo */
-            height: 100px; /* Altura del círculo */
-            border-radius: 50%; /* Hace que el div tenga forma de círculo */
-            background-color: rgb(247, 8, 8); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            top: 0px;
+            left:0vw;
+            background-color: rgb(247, 8, 8);
+            z-index: 9999;
         }
 
         .circulo2 {
-            width: 100px; /* Ancho del círculo */
-            height: 100px; /* Altura del círculo */
-            border-radius: 50%; /* Hace que el div tenga forma de círculo */
-            background-color: rgb(26, 26, 228); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            top: 0px;
+            left:6vw;
+            background-color: rgb(26, 26, 228);
+            z-index: 9999;
         }
 
         .circulo3 {
-            width: 100px; /* Ancho del círculo */
-            height: 100px; /* Altura del círculo */
-            border-radius: 50%; /* Hace que el div tenga forma de círculo */
-            background-color: rgb(238, 238, 16); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            top: 0px;
+            left:12vw;
+            background-color: rgb(238, 238, 16);
+            z-index: 9999;
         }
 
         .circulo4 {
-            width: 100px; /* Ancho del círculo */
-            height: 100px; /* Altura del círculo */
-            border-radius: 50%; /* Hace que el div tenga forma de círculo */
-            background-color: rgb(5, 194, 5); /* Color de fondo (puedes cambiarlo según tus necesidades) */
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            top: 0px;
+            left:18vw;
+            background-color: rgb(5, 194, 5);
+            z-index: 9999;
         }
 
-        .boton-volver{
-            padding: 20px 40px; /* Espacio interior del botón */
-            position: fixed;
-            background-color: white; /* Color de fondo */
-            font-family:  'Lakki Reddy', sans-serif; /* Cambia el tipo de letra */
-            color: black; /* Color del texto */
-            border: 2px solid black;
-            border-radius: 5px; /* Borde redondeado */
-            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-            font-size: 30px; /* Tamaño de la fuente */
-            position: absolute; /* Posicionamiento absoluto */
-            top: 23vh;
-            left: 3.5vw;
+        .punto1 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(247, 8, 8);
+            margin: 10px;
+            bottom: 5vh;
+            left:-0.5vw;
+            background-color: #FFF;
         }
+        .punto2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(26, 26, 228);
+            margin: 10px;
+            bottom: 5vh;
+            left:5.5vw;
+            background-color: #FFF;
+        }
+        .punto3 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(238, 238, 16);
+            margin: 10px;
+            bottom: 5vh;
+            left:11.5vw;
+            background-color: #FFF;
+        }
+        .punto4 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(5, 194, 5);
+            margin: 10px;
+            bottom: 5vh;
+            left:17.5vw;
+            background-color: #FFF;
+        }
+
+        .contenedor {
+            position: absolute;
+            bottom: 0;
+            width: 100%; /* Ajusta según sea necesario */
+        }
+
+        .cuadrado {
+            position: absolute;
+            width: 400px; /* Ancho del cuadrado */
+            height: 300px; /* Alto del cuadrado */
+            background-color: rgba(0, 0, 0, 0.563); /* Color de fondo */
+            top: 30vh;
+            left: 5vw;
+            z-index: 9999;
+        }
+
+        
+
+        
     

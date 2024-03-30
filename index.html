@@ -13,7 +13,7 @@
     <script src="javascript/scripts.js"></script>
 </head>
 
-<body>
+<body >
 
     <div id="menu" class="Fondo">
         <center>
@@ -27,6 +27,10 @@
 
 
     <div id="gitar" style="display: none;" class="fondo">
+        <div class="cuadrado">
+            <center><h3>score</h3></center>                      
+        </div>
+
         <button onclick="mostrarMenu()" class="boton-pausa">
             <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
         </button>
@@ -34,20 +38,29 @@
         <div id="menu-pausa" style="display: none;">
             <h1>pausa</h1>
             <div>
-                <button onclick="volverAlMenu()" class="boton-volver">Volver al menú</button>
                 <button onclick="ocultarMenu()" class="boton-continuar ">Continuar</button>
             </div>
         </div>
 
+        
+
         <center>
-            <div class="rectangulo content">
+            <div class="rectangulo content" >                
                 <div class="circulo1"></div>
                 <div class="circulo2"></div>
                 <div class="circulo3"></div>
                 <div class="circulo4"></div>
+                <div class="contenedor">
+                    <div class="punto1"></div>
+                    <div class="punto2"></div>
+                    <div class="punto3"></div>
+                    <div class="punto4"></div>
+                </div>
+                
             </div>
         </center>
     </div>
+
 
 
 
