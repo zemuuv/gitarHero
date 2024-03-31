@@ -65,8 +65,7 @@ function start() {
     }, 40);
 }
 
-var audio = new Audio('musica\Cadaveria.mp3');
-
+var audio = new Audio("cadaveria.mp3"); 
 // Función para reproducir el audio
 function reproducirMusica() {
     audio.play();
@@ -80,7 +79,7 @@ function cambiarContenido() {
     var contenido = document.getElementById("gitar").innerHTML
     document.getElementById("menu").innerHTML = contenido;
     start();
-
+    reproducirMusica();
 }
 
 function mostrarMenu() {
