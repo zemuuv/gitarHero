@@ -81,6 +81,18 @@
             -3px 3px 0 #FFF; /* Borde blanco */
         }
 
+        h3{
+            font-family: 'Lakki Reddy', sans-serif;
+            color: black;
+            font-weight: bold;
+            font-size: 50px; /* Tamaño de letra más grande */
+            text-shadow: 
+            3px 3px 0 #FFF, 
+            -3px -3px 0 #FFF, 
+            3px -3px 0 #FFF, 
+            -3px 3px 0 #FFF; /* Borde blanco */
+        }
+
         .boton-pausa{            
             position: fixed;
             top: 2vh; /* 2% del alto de la ventana */
