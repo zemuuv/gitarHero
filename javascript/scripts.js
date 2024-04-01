@@ -77,17 +77,20 @@ function reproducirMusica() {
 }
 
 function pausarMusica() {
+    var reproductor = document.getElementById('audio');
     reproductor.pause();
 }
 
 function mostrarMenu() {
     document.getElementById("menu-pausa").style.display = "block";
     detenerMovimiento();
+    pausarMusica();
 }
 
 function ocultarMenu() {
     document.getElementById("menu-pausa").style.display = "none";
     start();
+    reproducirMusica();
 }
 
 
