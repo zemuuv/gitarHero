@@ -13,7 +13,9 @@
     <script src="javascript/scripts.js"></script>
 </head>
 
-<body >
+<body>
+
+    
 
     <div id="menu" class="Fondo">
         <center>
@@ -22,12 +24,19 @@
                 <button onclick="cambiarContenido()" class="boton">Empezar juego</button>
             </div>
         </center>
-    </div>    
+    </div>
 
     <div id="gitar" style="display: none;" class="fondo">
+        <audio id="audio" autoplay>
+            <source src="javascript/Cadaveria.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        
         <div class="cuadrado">
-            <center><h3>score<br><span id="puntajeDisplay">0</span> Pts</h3></center>                                 
-        </div>       
+            <center>
+                <h3>score<br><span id="puntajeDisplay">0</span> Pts</h3>
+            </center>
+        </div>
 
         <button onclick="mostrarMenu()" class="boton-pausa">
             <img src="css/imagenes/pausa.png" alt="Descripción de la imagen">
@@ -36,14 +45,15 @@
         <div id="menu-pausa" style="display: none;">
             <h1>pausa</h1>
             <div>
-                <button onclick="ocultarMenu()" class="boton-continuar ">Continuar</button>
+                <button onclick="ocultarMenu()" class="boton-continuar">Continuar</button>
             </div>
         </div>
 
         
 
+
         <center>
-            <div class="rectangulo content" >                
+            <div class="rectangulo content">
                 <div class="circulo1"></div>
                 <div class="circulo2"></div>
                 <div class="circulo3"></div>
@@ -54,7 +64,7 @@
                     <div class="punto3"></div>
                     <div class="punto4"></div>
                 </div>
-                
+
             </div>
         </center>
     </div>

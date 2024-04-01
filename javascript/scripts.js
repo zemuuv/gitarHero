@@ -65,29 +65,36 @@ function start() {
     }, 40);
 }
 
-var audio = new Audio("cadaveria.mp3"); 
-// Función para reproducir el audio
+function detenerMovimiento() {
+    clearInterval(intervalo);
+}
+
+var reproductor = document.getElementById('audio');
+
+
 function reproducirMusica() {
-    audio.play();
+    reproductor.play();
 }
 
 function pausarMusica() {
-    audio.pause();
+    reproductor.pause();
 }
+
+function mostrarMenu() {
+    document.getElementById("menu-pausa").style.display = "block";
+    detenerMovimiento();
+}
+
+function ocultarMenu() {
+    document.getElementById("menu-pausa").style.display = "none";
+    start();
+}
+
 
 function cambiarContenido() {
     var contenido = document.getElementById("gitar").innerHTML
     document.getElementById("menu").innerHTML = contenido;
     start();
-    reproducirMusica();
-}
-
-function mostrarMenu() {
-    document.getElementById("menu-pausa").style.display = "block";
-}
-
-function ocultarMenu() {
-    document.getElementById("menu-pausa").style.display = "none";
 }
 
 document.addEventListener('keyup', function (event) {
@@ -137,5 +144,15 @@ document.addEventListener('keyup', function (event) {
 function actualizarPuntaje() {
     document.getElementById('puntajeDisplay').textContent = contador;
 }
+
+
+
+
+
+
+
+
+
+
 
 
