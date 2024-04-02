@@ -130,7 +130,7 @@ function volverMenuPrincipal() {
 document.addEventListener('keyup', function (event) {
     if (event.key === 'd') {
         // Verifica si el círculo 4 está dentro de los píxeles definidos
-        if (posicion >= 620 && posicion <= 700) {
+        if (posicion >= 700 && posicion <= 740) {
             sonidito();
             contador += 1000;
             document.querySelector(".circulo1").style.visibility = 'hidden';
@@ -142,7 +142,7 @@ document.addEventListener('keyup', function (event) {
 document.addEventListener('keyup', function (event) {
     if (event.key === 'f') {
         // Verifica si el círculo 4 está dentro de los píxeles definidos
-        if (posicion1 >= 620 && posicion1 <= 700) {
+        if (posicion1 >= 700 && posicion1 <= 740) {
             sonidito();
             contador += 1000;
             document.querySelector(".circulo2").style.visibility = 'hidden';
@@ -154,7 +154,7 @@ document.addEventListener('keyup', function (event) {
 document.addEventListener('keyup', function (event) {
     if (event.key === 'h') {
         // Verifica si el círculo 4 está dentro de los píxeles definidos
-        if (posicion2 >= 620 && posicion2 <= 700) {
+        if (posicion2 >= 700 && posicion2 <= 740) {
             sonidito();
             contador += 1000;
             document.querySelector(".circulo3").style.visibility = 'hidden';
@@ -166,7 +166,7 @@ document.addEventListener('keyup', function (event) {
 document.addEventListener('keyup', function (event) {
     if (event.key === 'j') {
         // Verifica si el círculo 4 está dentro de los píxeles definidos
-        if (posicion3 >= 620 && posicion3 <= 700) {
+        if (posicion3 >= 700 && posicion3 <= 740) {
             sonidito();
             contador += 1000;
             document.querySelector(".circulo4").style.visibility = 'hidden';
@@ -180,6 +180,7 @@ function actualizarPuntaje() {
 }
 
 function highScore() {
+    document.getElementById("variable").innerText = contador;
     document.getElementById("puntajeX").style.display = "block";
     detenerMovimiento();
     document.querySelector(".circulo1").style.visibility = 'hidden';

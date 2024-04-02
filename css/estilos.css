@@ -63,7 +63,7 @@
     position: absolute;
     /* Posicionamiento absoluto */
     top: 50vh;
-    left: 40vw;
+    left: 42vw;
 }
 
 .boton-Menu {
@@ -85,8 +85,8 @@
     /* Tamaño de la fuente */
     position: absolute;
     /* Posicionamiento absoluto */
-    top: 33vh;
-    left: 5.5vw;
+    top: 28vh;
+    left: 5vw;
 
 }
 
@@ -209,6 +209,11 @@ h3 {
     /* Mueve el texto hacia arriba */
 }
 
+#puntajeX h3 {
+    margin-top: -20px;
+    /* Mueve el texto hacia arriba */
+}
+
 .boton-continuar {
     padding: 10px 20px;
     /* Espacio interior del botón */
@@ -228,8 +233,8 @@ h3 {
     /* Tamaño de la fuente */
     position: absolute;
     /* Posicionamiento absoluto */
-    top: 20vh;
-    left: 8vw;
+    top: 17vh;
+    left: 7vw;
 
 }
 
@@ -335,6 +340,78 @@ h3 {
     bottom: 5vh;
     left: 17.5vw;
     background-color: #FFF;
+}
+
+.punto1 h5 {
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the h5 inside the div */
+    font-family: 'Lakki Reddy', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
+}
+
+.punto2 h5 {
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the h5 inside the div */
+    font-family: 'Lakki Reddy', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
+}
+
+.punto3 h5 {
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the h5 inside the div */
+    font-family: 'Lakki Reddy', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
+}
+
+.punto4 h5 {
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the h5 inside the div */
+    font-family: 'Lakki Reddy', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    /* Tamaño de letra más grande */
+    text-shadow:
+        3px 3px 0 #FFF,
+        -3px -3px 0 #FFF,
+        3px -3px 0 #FFF,
+        -3px 3px 0 #FFF;
+    /* Borde blanco */
 }
 
 .contenedor {
