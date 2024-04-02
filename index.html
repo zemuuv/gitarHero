@@ -15,9 +15,16 @@
 
 <body>
 
-    
-
     <div id="menu" class="Fondo">
+        <center>
+            <div class="content">
+                <h1> SuperHero <br> Band </h1>
+                <button onclick="cambiarContenido()" class="boton">Empezar juego</button>
+            </div>
+        </center>
+    </div>
+
+    <div id="principal" class="Fondo" style="display: none;">
         <center>
             <div class="content">
                 <h1> SuperHero <br> Band </h1>
@@ -28,7 +35,12 @@
 
     <div id="gitar" style="display: none;" class="fondo">
         <audio id="audio" autoplay>
-            <source src="javascript/Cadaveria.mp3" type="audio/mp3">
+            <source src="musica/Cadaveria.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <audio id="coin">
+            <source src="musica/coin.mp3" type="audio/mp3">
             Tu navegador no soporta el elemento de audio.
         </audio>
         
@@ -46,11 +58,16 @@
             <h1>pausa</h1>
             <div>
                 <button onclick="ocultarMenu()" class="boton-continuar">Continuar</button>
+                <button onclick="volverMenuPrincipal()" class="boton-Menu"> menu Principal</button>
             </div>
+            
         </div>
 
-        
-
+        <div id="puntajeX" style="display: none;">
+            <h1>tu puntaje</h1>
+            <h3><span id="puntajeDisplay">0</span></h3>
+            <button onclick="volverMenuPrincipal()" class="boton-Menu"> menu Principal</button>
+        </div>
 
         <center>
             <div class="rectangulo content">
@@ -68,9 +85,6 @@
             </div>
         </center>
     </div>
-
-
-
 
 </body>
 
